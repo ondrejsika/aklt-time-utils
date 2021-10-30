@@ -96,23 +96,23 @@ export default function App() {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </Head>
     <form onSubmit={handleSubmit(onSubmit)}>
-      <p>Take Off (hh:mm)</p>
+      <p>Takeoff time (hh:mm)</p>
       <input {...register("takeoff_h")} type="text" size="2" maxLength="2" inputMode="numeric" />
       <input {...register("takeoff_m")} type="text"  size="2" maxLength="2" inputMode="numeric" />
-      <p>Time (hh:mm)</p>
+      <p>Flight time (hh:mm)</p>
       <input {...register("time_h")} type="text" size="2" maxLength="2" inputMode="numeric"/>
       <input {...register("time_m")} type="text" size="2" maxLength="2" inputMode="numeric" />
-      <p>Flights</p>
+      <p>Number of flights</p>
       <input {...register("flights")} type="text" size="5" maxLength="5" inputMode="numeric"/>
-      <p>Total Time (hhhh:mm)</p>
+      <p>Total time (hh:mm)</p>
       <input {...register("total_time_h")} type="text" size="5" maxLength="5" inputMode="numeric"/>
       <input {...register("total_time_m")} type="text" size="2" maxLength="2" inputMode="numeric" />
-      <p>Total Flights</p>
+      <p>Total number of flights</p>
       <input {...register("total_flights")} type="text" size="5" maxLength="5" inputMode="numeric"/>
       <p>
       <input type="submit" />
       </p>
-      <p>Times: {t1h}:{minStr(t1m)}/{t2h}:{minStr(t2m)} - {t3h}:{minStr(t3m)}/{t4h}:{minStr(t4m)}</p>
+      <p>Time: {t1h}:{minStr(t1m)}/{t2h}:{minStr(t2m)} - {t3h}:{minStr(t3m)}/{t4h}:{minStr(t4m)}</p>
       <p>Flight time: {time_h}:{minStr(time_m)}</p>
       <p>Block time: {block_time_h}:{minStr(block_time_m)}</p>
       <p>Total flight time: {tth}:{minStr(ttm)}</p>

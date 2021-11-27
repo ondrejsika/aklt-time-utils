@@ -99,6 +99,7 @@ export default function App() {
       <p>Takeoff time (hh:mm)</p>
       <input {...register("takeoff_h")} type="text" size="2" maxLength="2" inputMode="numeric" />
       <input {...register("takeoff_m")} type="text"  size="2" maxLength="2" inputMode="numeric" />
+      {" "}UTC
       <p>Flight time (hh:mm)</p>
       <input {...register("time_h")} type="text" size="2" maxLength="2" inputMode="numeric"/>
       <input {...register("time_m")} type="text" size="2" maxLength="2" inputMode="numeric" />
@@ -112,7 +113,7 @@ export default function App() {
       <p>
       <input type="submit" />
       </p>
-      <p>Time: {t1h}:{minStr(t1m)}/{t2h}:{minStr(t2m)} - {t3h}:{minStr(t3m)}/{t4h}:{minStr(t4m)}</p>
+      <p>Time: {t1h}:{minStr(t1m)}/{t2h}:{minStr(t2m)} - {t3h}:{minStr(t3m)}/{t4h}:{minStr(t4m)} UTC</p>
       <p>Flight time: {time_h}:{minStr(time_m)}</p>
       <p>Block time: {block_time_h}:{minStr(block_time_m)}</p>
       <p>Total flight time: {tth}:{minStr(ttm)}</p>

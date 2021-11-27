@@ -119,6 +119,8 @@ export default function App() {
       <p>Total flight time: {tth}:{minStr(ttm)}</p>
       <p>Total flights: {flights + total_flights}</p>
       <hr/>
+      I will be happy for your feedback (czech or english): <a href="mailto:ondrej@ondrejsika.com?cc=feedback-aklt-time-utils@sikamail.com&amp;subject=Feedback AKLT Time Utils">ondrej@ondrejsika.com</a>
+      <hr/>
       AKLT Time Utils, 2021 Ondrej Sika
     </form></>
   );
